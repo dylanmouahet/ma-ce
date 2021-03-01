@@ -1,0 +1,1104 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+	Accès simulateur santé - Caisse d'Epargne
+</title><link rel="shortcut icon" type="image/x-icon" href="../../bundles/inddefault/images/favicon.png" />
+    <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/22a69e2.js?2.3.48"></script>
+<script type="text/javascript" src="../../app-js-mar=101.js"></script>
+    <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/211a38c.js?2.3.48"></script>
+
+    <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/b2e0684.js?2.3.48"></script>
+
+<script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/53c83ef.js?2.3.48"></script>
+
+<link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/97e6ec4.css?2.3.48"/>
+
+    <link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/cdf92ef.css?2.3.48"/>
+
+    <link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/27e93a2.css?2.3.48"/>
+
+    <link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/86d3ec8.css?2.3.48"/>
+
+    <link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/7c5a75c.css?2.3.48" media="print"/>
+
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/45fa6fe.js?2.3.48"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+    <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/a996642.js?2.3.48"></script>
+<![endif]-->
+<script type="text/javascript" src="../../cache/aefe7b3b3c01434d871f950641ec477bfb6e4600/satelliteLib-a8a98174e13cce0ba75637f9bf7496e02422bab8.js"></script>
+
+    <script type="text/javascript">
+         $.tracking = {
+            _loggedEvents: {},
+            event: function (name, params) {},
+            _logEvent: function (name) {},
+            hasEventFired: function (name) {},
+            getFiredEventCount: function (name) {},
+            set: function(name, value) {}
+         };
+
+         function ClickNgi(type, libelle) {
+             if (datalayer) {
+                 datalayer.clic.libelle = libelle;
+                 datalayer.clic.type = type;
+                 /* console.log('ClickNgi'); */
+                 /* console.log(JSON.stringify(datalayer)); */
+                 _satellite.track('ClickToTrackNgi');
+             }
+             else {
+                 console.log('pas de datalayer');
+             }
+         }
+
+         function ClickNgiSim() {
+             /* console.log('ClickNgiSim'); */
+             _satellite.track('OpenSimNgi');
+         }
+
+         function ClickNgiRdv() {
+             /* console.log('ClickNgiRdv'); */
+             _satellite.track('ClickNgiRdv');
+         }
+
+         function ClickNgiCallBack() {
+             /* console.log('ClickNgiCallBack'); */
+             _satellite.track('ClickNgiCallBack');
+         }
+
+         function ClickToTrackNgi() {
+             /* console.log('ClickToTrackNgi'); */
+             _satellite.track('ClickToTrackNgi');
+         }
+
+         function ClickToAbandonNgi() {
+             /* console.log('ClickToAbandonNgi'); */
+             _satellite.track('ClickToAbandonNgi');
+         }
+
+         function ClickNgiCGV() {
+             /* console.log('ClickNgiCGV'); */
+             _satellite.track('ClickNgiCGV');
+         }
+
+         function StartFormNgi() {
+             /* console.log('StartFormNgi'); */
+             _satellite.track('StartFormNgi');
+         }
+
+         function EndFormNgi() {
+             /* console.log('EndFormNgi'); */
+             _satellite.track('EndFormNgi');
+         }
+
+         function PageLoadNgi() {
+             /* console.log('PageLoadNgi'); */
+             _satellite.track('PageLoadNgi');
+             /* console.log('fin PageLoadNgi'); */
+         }
+
+         function ClickToFichesProduits(type) {
+             //tag de click
+             /* var libelle = 'sim credit ' + type + ' - fiches produits'; */
+             /* console.log('FichesProduits : type = ' + type); */
+             ClickNgi('navigation', 'sim credit ' + type + ' - fiches produits');
+         }
+    </script>
+
+<link id="style" href="../../cache/style2_20121123144355.css" rel="stylesheet" type="text/css" media="screen" /><link id="indcss_all_min" href="../../cache/indcss_all_min_20151102101222.css" rel="stylesheet" type="text/css" media="screen" /><link id="indcss_fancybox" href="../../cache/indcss_fancybox_20111202124712.css" rel="stylesheet" type="text/css" media="screen" /><script id="modernizr" src="../../cache/indjs/lib/modernizr-1.6.js" type="text/javascript"></script><script id="jquery1" src="../../cache/indjs/lib/jquery-1.4.2.min.js" type="text/javascript"></script><script type="text/javascript" language="javascript">var jsPath ='/cache/indjs/'</script><script id="includes" src="../../cache/indjs/includes.js" type="text/javascript"></script><script type="text/javascript" language="javascript">var jquery_1_4_2 = $.noConflict(true);</script><script id="jquery2" src="../../Components/Javascripts/jquery.js" type="text/javascript"></script><script id="indjs_boutonsfancybox" src="../../cache/indjs_boutonsfancybox_20131001093731.js" type="text/javascript"></script><script id="fonctions" src="../../cache/fonctions_20111129022402.js" type="text/javascript"></script><script id="wbo_performance" src="../../cache/wbo_performance_20131030163912.js" type="text/javascript"></script><script id="adPerf" src="../../cache/adperf_20160518151618.js" type="text/javascript"></script><link id="sante_simulation_connexion_v2_css" href="https://www.caisse-epargne.fr/cache/sante_simulation_connexion_v2_css_20131112160545.css" rel="stylesheet" type="text/css" media="screen" /><link id="tequilastyle_ind" href="https://www.caisse-epargne.fr/cache/tequilastyle_ind_20121026152741.css" rel="stylesheet" type="text/css" media="screen" /></head>
+<body class="layout-fixed">
+        <!--Control Language="C#"--><!--Register TagPrefix="cc" Namespace="GCE.CMS.FrontOffice.Web.Controls" Assembly="GCE.CMS.FrontOffice.Web"--><script type="text/javascript">
+
+    /* lecture du cookie */
+    function lectureCookie(k) { return (document.cookie.match('(^|; )' + k + '=([^;]*)') || 0)[2] }
+
+    /* */
+    function parseUrlParameters(query) {
+        var getQueryStringNameValuePairs = new Array();
+        var queryString = unescape(query);
+        var nameValuePairs = queryString.split(/&/);
+
+        for (var i in nameValuePairs) {
+            var nameValue = nameValuePairs[i].split(/=/);
+            getQueryStringNameValuePairs[nameValue[0]] = nameValue[1];
+        }
+
+        return getQueryStringNameValuePairs;
+    }
+
+    var datalayer = {
+        clic: {
+            libelle: "",
+            type: ""
+        },
+        client: {
+            idEnttGrpe: "",
+            id: "",
+            statut: "prospect",
+            marche: ""
+        },
+        page: {
+            applicationType: "Site",
+            applicationName: "ngi",
+            codeEnttGrpe: "NAT",
+            marche: "Particuliers",
+            univers: "",
+            pageType: "",
+            pageName: "",
+            espace: "",
+            abTesting: "",
+            abTestingId: "",
+            iframe: "0"
+        },
+        produit: {
+            gamme: "",
+            code: "",
+            formChosen: "",
+            expectation: ""
+        },
+        form: {
+            nom: "",
+            idEtape: ""
+        },
+        campagne: {
+            id: ""
+        },
+        search: {
+            notFound: "",
+            type: ""
+        },
+        answer: {
+            montantIni: "",
+            duree: "",
+            montantMens: "",
+            aggreg75: ""
+        }
+    };
+
+    var codeAcronymeCaisse = {
+        11315: "CEPAC",
+        11425: "CEN",
+        13135: "CEMP",
+        13485: "CELR",
+        14445: "CEBPL",
+        14505: "CELC",
+        16275: "CEHDF",
+        18025: "CEHDF",
+        18315: "CECAZ",
+        18715: "CEPAL",
+        12135: "CEBFC",
+        13335: "CEAPC",
+        13825: "CERA",
+        14265: "CELDA",
+        15135: "CELCA",
+        16705: "CEA",
+        17515: "CEIDF"
+    };
+
+
+    var libelleAcronymeCaisse = {
+        "cepac": "CEPAC",
+        "normandie": "CEN",
+        "midi-pyrenees": "CEMP",
+        "languedoc-roussillon": "CELR",
+        "bretagne-pays-de-loire": "CEBPL",
+        "loire-centre": "CELC",
+        "hauts-de-france": "CEHDF",
+        "picardie": "CEHDF",
+        "cote-d-azur": "CECAZ",
+        "auvergne-limousin": "CEPAL",
+        "bourgogne-franche-comte": "CEBFC",
+        "aquitaine-poitou-charentes": "CEAPC",
+        "rhone-alpes": "CERA",
+        "loire-drome-ardeche": "CELDA",
+        "lorraine-champagne-ardenne": "CELCA",
+        "alsace": "CEA",
+        "ile-de-france": "CEIDF"
+    };
+
+
+    var listeUnivers = {
+        "au-quotidien": "au quotidien",
+        "emprunter": "emprunter",
+        "epargner": "epargner",
+        "s-assurer": "s assurer"
+    };
+
+
+    jQuery(function() {
+        if (window.location.search.substring(1) != null) {
+            /* console.log('window.location.search.substring(1) ' + window.location.search.substring(1) + '*'); */
+            var queryString = parseUrlParameters(window.location.search.substring(1));
+            if (queryString.cid) {
+                datalayer.campagne.id = queryString.cid;
+            }
+        }
+        else {
+            console.log('window.location.search.substring(1) = null');
+        }
+
+        /* =============================================================================================== */
+        /* recuperation des informations dans l url */
+        /* =============================================================================================== */
+
+        var url = window.location.href;
+        /* console.log('url ' + url + ' *');*/
+
+        /* ======== recuperation de la region dans l url pour alimenter datalayer avec acronyme ======== */
+        var etablissement = "";
+        etablissement = url.split("/")[3]; /* url formatee en region/marche */
+        /* console.log('etablissement ' + etablissement + ' *');*/
+        if (libelleAcronymeCaisse[etablissement] === undefined) {
+            /* on n a pas trouve la region, l url est peut-etre formatee en marche/region */
+            etablissement = url.split("/")[4]; /* url formatee en marche/region */
+            /* console.log('etablissement ' + etablissement + ' *');*/
+            if (libelleAcronymeCaisse[etablissement] === undefined) {
+                /* on n a pas trouve la region, l url n est pas regionalisee */
+                datalayer.page.codeEnttGrpe = "NAT";
+            }
+            else {
+                /* etablissement trouve dans url formatee en marche/region */
+                datalayer.page.codeEnttGrpe = libelleAcronymeCaisse[etablissement];
+            }
+        }
+        else {
+            /* etablissement trouve dans url formatee en region/marche */
+            datalayer.page.codeEnttGrpe = libelleAcronymeCaisse[etablissement];
+        }
+        /* console.log('datalayer.page.codeEnttGrpe ' + datalayer.page.codeEnttGrpe + '*');*/
+
+
+
+        /* ======== recuperation de l univers dans l url pour alimenter datalayer.page.univers s il n est pas fourni au niveau de la page (ex VAD) ======== */
+        if (datalayer.page.univers === undefined) {
+            var univers = "";
+            univers = url.split("/")[4]; /* url non regionalisee */
+            console.log('univers ' + univers + ' *');
+            if (listeUnivers[univers] === undefined) {
+                /* on n a pas trouve l univers, l url est regionalisee */
+                univers = url.split("/")[5]; /* url regionalisee */
+                console.log('univers ' + univers + ' *');
+                if (listeUnivers[univers] === undefined) {
+                    /* on n a pas trouve l univers */
+                    datalayer.page.univers = "";
+                }
+                else {
+                    /* univers trouve  */
+                    datalayer.page.univers = listeUnivers[univers];
+                }
+            }
+            else {
+                /* univers trouve  */
+                datalayer.page.univers = listeUnivers[univers];
+            }
+        }
+        console.log('datalayer.page.univers ' + datalayer.page.univers + '*');
+
+        /* =============================================================================================== */
+
+
+        /* =============================================================================================== */
+        /* recuperation de certaines informations dans le cookie EZCONTEXT(reg=) pour alimenter datalayer  */
+        /* =============================================================================================== */
+        datalayer.client.idEnttGrpe = parseUrlParameters(lectureCookie("EZ_CONTEXTE")).reg;
+        console.log('datalayer.client.idEnttGrpe ' + datalayer.client.idEnttGrpe + '*');
+        datalayer.client.marche = parseUrlParameters(lectureCookie("EZ_CONTEXTE")).mar;
+        console.log('datalayer.client.marche ' + datalayer.client.marche + '*');
+        datalayer.client.statut = $.context.isConnected() ? "authentifie" : "prospect";
+        console.log('datalayer.client.statut ' + datalayer.client.statut + '*');
+        /* =============================================================================================== */
+        if ($.context.has('nodape')) {
+        datalayer.client.id = $.context.get('nodape');
+        datalayer.client.idEnttGrpe = $.context.has('creg') ? $.context.get('creg') : '';
+        datalayer.client.marche = $.context.has('mar') ? $.context.get('mar') : '';
+        datalayer.client.statut = $.context.isConnected() ? "authentifie" : "identifie";
+        }
+    });
+
+</script>
+<script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/b31b0a6.js?2.3.48"></script>
+
+<link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/d0d8219.css?2.3.48"/>
+
+                <script type="text/javascript" src="https://www.caisse-epargne.fr:443/js/5fb7f7b.js?2.3.48"></script>
+    <link rel="stylesheet" href="https://www.caisse-epargne.fr:443/css/a2529e9.css?2.3.48"/>
+    
+    <!--[if lte IE 6 ]> <div class="ie6 ielt7 ielt8 ielt9"> <![endif]-->
+    <!--[if IE 7 ]> <div class="ie7 ielt8 ielt9"> <![endif]-->
+    <!--[if IE 8 ]> <div class="ie8 ielt9"> <![endif]-->
+    <!--[if IE 9 ]> <div class="ie9"> <![endif]-->
+    <!-- Modele_TG_Onglet.aspx -->
+    <header id="header">
+    <div class="container">
+        <div class="row main-header">
+            <div class="logo-container">
+    <a class="logo" href="../../bretagne-pays-de-loire/particuliers.html">
+            <img src="https://www.caisse-epargne.fr:443/var/storage/images/ind/configuration/national/611-122-fre-BL/bretagne-pays-de-loire_logo.png?2.3.48" 
+                                                               alt="Caisse d’Epargne Bretagne Pays de Loire"
+                     title="Caisse d’Epargne Bretagne Pays de Loire"
+                     class="ezimage-field" />
+
+    </a>
+</div>
+
+                
+            <div class="burger"></div>
+            <div class="off-canvas">
+                <div class="inner">
+                    <div class="dropdown account-type">
+    <a data-toggle="dropdown" href="#" class="title">
+        Particuliers
+    </a>
+    <ul class="dropdown-menu">
+                    <li>
+                <a href="../../bretagne-pays-de-loire/particuliers.html"
+                   class="active">
+                    Particuliers
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/professionnels.html"
+                   >
+                    Professionnels
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/entreprises.html"
+                   >
+                    Entreprises
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/associations-fondations-mutuelles.html"
+                   >
+                    Associations, Fondations, Mutuelles - Mandataires Judiciaires à la Protection des Majeurs
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/secteur-public.html"
+                   >
+                    Secteur public
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/logement-social.html"
+                   >
+                    Logement Social - Économie Mixte
+                </a>
+            </li>
+                    <li>
+                <a href="../../bretagne-pays-de-loire/immobilier-professionnel.html"
+                   >
+                    Immobilier professionnel
+                </a>
+            </li>
+            </ul>
+</div>
+
+                    <form class="search-area" action="../../bretagne-pays-de-loire/particuliers.html">
+    <input type="hidden" name="current_marche" value="/bretagne-pays-de-loire/particuliers"/>
+    <button type="button" class="icon-bpce-close clear-search"></button>
+    <input type="text" placeholder="Rechercher" class="search-input" name="search_phrase"/>
+    <button type="submit" class="search-send">OK</button>
+</form>
+
+                        
+                        <p class="account-link">
+            <a href="../../se-connecter/sso-service=dei.html" class="icon icon-bpce-profil">Accès aux comptes</a>
+    </p>
+
+
+
+                        <ul class="speed-links">
+                    <li><a href="../../bretagne-pays-de-loire/besoin-d-aide.html"  target="_blank"><img src="https://www.caisse-epargne.fr:443/var/storage/images/media/media-bretagne-pays-de-loire/selfcare/pictos/picto-besoin-d-aide-en-tete/3212324-1-fre-BL/picto-besoin-d-aide-en-tete.png?2.3.48" 
+                     width="24"                      height="24"                     alt="picto besoin d aide"
+                     title="picto besoin d aide"
+                     class="ezobjectrelationlist-field ezimage-field" />
+                                            Besoin d'aide
+                                    </a></li>
+                    <li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/produit-coffre-fort-numerique.html" class=" icon-bpce-lock" target="">
+                    
+                                            Coffre-fort
+                                    </a></li>
+                    <li><a href="../../bretagne-pays-de-loire/particuliers/rechercher-une-agence.html" class=" icon-bpce-france" target="">
+                    
+                                            Agences
+                                    </a></li>
+                    <li class="contact-link hidden-phone"><a href="../../bretagne-pays-de-loire/particuliers/contactez-un-conseiller.html" class=" icon-bpce-chat contact-link hidden-phone" data-toggle="tooltip" data-tootlip-contact=".tooltip-contact" onclick="$('div.tooltip-contact').show(); return false;" target="">
+                    
+                                             Contact<br> Prise de rdv
+                                    </a></li>
+            </ul>
+
+
+                                            <div class="tooltip-contact">
+    <div class="contact-wrapper">
+                                    <div class="default">
+                    <div class="informations">
+                                                    <p>Vous souhaitez ouvrir un compte, discuter d'un projet, découvrir notre offre ?<br />
+Prenez rendez-vous avec un conseiller directement sur internet.</p>
+                                                                                                <div data-webcallback="true" class="webcallback">
+                                                            <p>Contactez directement un conseiller au</p>
+                                                                                        <a href="tel:3241" class="cta phone-number">
+                                    32 41*                                </a>
+                                                                                        <span class="mentions"><p>*Appel non surtaxé, coût d'un appel local</p></span>
+                                                    </div>
+                        <div data-webcallback="false">
+                                                                                        <a href="../../bretagne-pays-de-loire/particuliers/rendez-vous-en-ligne.html" class="cta" target=""  data-tracking-link-title="Prendre rendez-vous" >
+                                                            
+                                Prendre rendez-vous
+                                    </a>
+                                                    </div>
+                    </div>
+                                            <ul class="other-links list-unstyled">
+                            <li>
+                                <a href="#" class="tooltip-contact-link icon-bpce-circle-contact other_contact_link">Mes autres contacts</a>
+                            </li>
+                        </ul>
+                                                                <hr class="visible-lg">
+                        <div class="informations visible-lg">
+                                                            <p>Vous êtes déjà client ? <br />
+Retrouvez directement les coordonnées de votre conseiller et/ou agence en vous connectant sur votre espace personnel</p>
+                                                                                        <div class="account-link">
+                                                                    <a href='../../se-connecter/sso-service=dei&amp;continue_parameters=%7B%22redirectUrl%22-%223886%22%7D.html'  class="icon icon-bpce-profil">S'identifier</a>
+                                                                </div>
+                                                    </div>
+                                    </div>
+                        </div>
+</div>
+
+
+<script>
+
+if (typeof($.context.get('auth')) != "undefined" && $.context.get('auth') != 0 && $.context.get('auth') != "WE" && $.context.get('auth') != "eu")
+{
+    $("li.contact-link a").removeAttr("onclick");
+    $("li.contact-link a").removeAttr("data-tootlip-contact");
+    $("li.contact-link a").removeAttr("data-toggle");
+    $("li.contact-link a").unbind();
+}
+
+</script>
+                    
+                        <nav class="row">
+    <div class="nav-container">
+        <ul class="nav nav-tabs nav-justified">
+                                                        <li class="dropdown header-dropdown" prefix="/bretagne-pays-de-loire/particuliers/au-quotidien">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Au quotidien">
+            <span>Au quotidien</span>
+        </a>
+            <div class="drop-down dropdown-menu">
+        <div class="clip-wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                                                        <p class="title">LA CAISSE D'EPARGNE AVEC VOUS AU QUOTIDIEN</p>
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/services-et-options-complementaires.html"  target=""  data-tracking-link-title="Services et options complémentaires" >
+                                                            
+                                Services et options complémentaires
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/formules-bancaires.html"  target=""  data-tracking-link-title="Les forfaits bancaires" >
+                                                            
+                                Les forfaits bancaires
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/cartes-bancaires-et-moyens-de-paiement.html"  target=""  data-tracking-link-title="Cartes bancaires et moyens de paiement" >
+                                                            
+                                Cartes bancaires et moyens de paiement
+                                    </a></li></ul>
+                                </div>
+                                                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/consulter-gerer-ses-comptes.html"  target=""  data-tracking-link-title="Consulter et gérer ses comptes" >
+                                                            
+                                Consulter et gérer ses comptes
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/ouvrir-un-compte.html"  target=""  data-tracking-link-title="Ouvrir un compte" >
+                                                            
+                                Ouvrir un compte
+                                    </a></li></ul>
+                                </div>
+                                                            </div>
+                        </div>
+                                                <div class="col-sm-4">
+                            <div class="slide pushes"><div><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/conseil-choix-carte-bancaire.html"  data-tracking-link-title="Quelle carte bancaire choisir ?" data-position="1"  data-pub="INT-102" data-format="etes-vous-certaine-d-avoir-la-bonne-cart"><img src="https://www.caisse-epargne.fr:443/var/storage/images/media/media-bretagne-pays-de-loire/particuliers/home/vignettes-mineures/au-quotidien/etes-vous-certain-e-d-avoir-la-bonne-carte-en-mains/4650294-1-fre-BL/etes-vous-certain-e-d-avoir-la-bonne-carte-en-mains_push_marketing.jpg?2.3.48" 
+                                                               alt="En savoir +"
+                     title="En savoir +"
+                     class="ezimage-field" /></a></div></div>
+                        </div>
+                                            </div>
+                    <div class="row">
+                                                <div class="col-sm-12">
+                            <a href="../../bretagne-pays-de-loire/particuliers/au-quotidien.html" class="offers-link" target=""  data-tracking-link-title="Tout ce dont vous avez besoin au quotidien" >
+                                                            
+                                Tout ce dont vous avez besoin au quotidien
+                                    </a><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/nos-produits-pour-gerer-son-quotidien.html" class="offers-link" target=""  data-tracking-link-title="Voir tous les produits de la Caisse d&#039;Epargne pour gérer votre quotidien" >
+                                                            
+                                Voir tous les produits de la Caisse d'Epargne pour gérer votre quotidien
+                                    </a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </li>
+
+                                    <li class="dropdown header-dropdown" prefix="/bretagne-pays-de-loire/particuliers/emprunter">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Emprunter">
+            <span>Emprunter</span>
+        </a>
+            <div class="drop-down dropdown-menu">
+        <div class="clip-wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                                                        <p class="title">LA CAISSE D'EPARGNE AVEC VOUS POUR VOS PROJETS</p>
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/emprunter/acheter-un-logement.html"  target=""  data-tracking-link-title="Acheter un logement" >
+                                                            
+                                Acheter un logement
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/emprunter_navigation/acheter-un-vehicule.html"  target=""  data-tracking-link-title="Acheter et financer un véhicule" >
+                                                            
+                                Acheter et financer un véhicule
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/emprunter/financer-un-besoin-de-tresorerie-ses-envies2.html"  target=""  data-tracking-link-title="Financer un projet, un imprévu" >
+                                                            
+                                Financer un projet, un imprévu
+                                    </a></li></ul>
+                                </div>
+                                                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/emprunter_navigation/financer-des-travaux.html"  target=""  data-tracking-link-title="Financer des travaux" >
+                                                            
+                                Financer des travaux
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/emprunter_navigation/financer-ses-etudes.html"  target=""  data-tracking-link-title="Financer ses études" >
+                                                            
+                                Financer ses études
+                                    </a></li></ul>
+                                </div>
+                                                            </div>
+                        </div>
+                                                <div class="col-sm-4">
+                            <div class="slide pushes"><div><a href="../../bretagne-pays-de-loire/particuliers/simulateurs.html"  target=""  data-tracking-link-title="Lien découvrez nos simulateurs - bpl" data-position="1"  data-pub="INT-102" data-format="assurance---credits-simulateurs-et-devis"><img src="https://www.caisse-epargne.fr:443/var/storage/images/media/media-bretagne-pays-de-loire/particuliers/home/vignettes-mineures/emprunter/assurance-credits-simulateurs-et-devis-en-ligne/5772659-4-fre-BL/assurance-credits-simulateurs-et-devis-en-ligne_push_marketing.jpg?2.3.48" 
+                                                               alt="Simulez"
+                     title="Simulez"
+                     class="ezimage-field" /></a></div></div>
+                        </div>
+                                            </div>
+                    <div class="row">
+                                                <div class="col-sm-12">
+                            <a href="../../bretagne-pays-de-loire/particuliers/emprunter.html" class="offers-link" target=""  data-tracking-link-title="Tout ce dont vous avez besoin pour financer vos projets" >
+                                                            
+                                Tout ce dont vous avez besoin pour financer vos projets
+                                    </a><a href="../../bretagne-pays-de-loire/particuliers/emprunter/nos-produits-pour-emprunter.html" class="offers-link" target=""  data-tracking-link-title="Voir tous les produits de la Caisse d&#039;Epargne pour emprunter" >
+                                                            
+                                Voir tous les produits de la Caisse d'Epargne pour emprunter
+                                    </a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </li>
+
+                                    <li class="dropdown header-dropdown" prefix="/bretagne-pays-de-loire/particuliers/epargner">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Epargner">
+            <span>Epargner</span>
+        </a>
+            <div class="drop-down dropdown-menu">
+        <div class="clip-wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                                                        <p class="title">LA CAISSE D'EPARGNE AVEC VOUS POUR VOTRE EPARGNE</p>
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/epargner_navigation/epargner-regulierement.html"  target="_self"  data-tracking-link-title="Construire son capital en épargnant régulièrement" >
+                                                            
+                                Construire son capital en épargnant régulièrement
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/epargner_navigation/faire-fructifier-son-capital.html"  target="_self"  data-tracking-link-title="Faire fructifier son capital" >
+                                                            
+                                Faire fructifier son capital
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/epargner_navigation/preparer-sa-retraite.html"  target="_self"  data-tracking-link-title="Préparer sa retraite" >
+                                                            
+                                Préparer sa retraite
+                                    </a></li></ul>
+                                </div>
+                                                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/epargner/transmettre-a-ses-proches2.html"  target="_self"  data-tracking-link-title="Transmettre à ses proches" >
+                                                            
+                                Transmettre à ses proches
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/epargner_navigation/optimiser-sa-fiscalite.html"  target="_self"  data-tracking-link-title="Optimiser sa fiscalité" >
+                                                            
+                                Optimiser sa fiscalité
+                                    </a></li></ul>
+                                </div>
+                                                            </div>
+                        </div>
+                                            </div>
+                    <div class="row">
+                                                <div class="col-sm-12">
+                            <a href="../../bretagne-pays-de-loire/particuliers/epargner.html" class="offers-link" target=""  data-tracking-link-title="Tout ce dont vous avez besoin pour votre épargne" >
+                                                            
+                                Tout ce dont vous avez besoin pour votre épargne
+                                    </a><a href="../../bretagne-pays-de-loire/particuliers/epargner/nos-produits-pour-epargner.html" class="offers-link" target=""  data-tracking-link-title="Voir tous les produits de la Caisse d&#039;Epargne pour épargner" >
+                                                            
+                                Voir tous les produits de la Caisse d'Epargne pour épargner
+                                    </a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </li>
+
+                                    <li class="dropdown header-dropdown" prefix="/bretagne-pays-de-loire/particuliers/s-assurer">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="S&#039;assurer">
+            <span>S'assurer</span>
+        </a>
+            <div class="drop-down dropdown-menu">
+        <div class="clip-wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                                                        <p class="title">LA CAISSE D'EPARGNE VOUS ASSURE</p>
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/assurer-son-logement.html"  target=""  data-tracking-link-title="Assurer mon logement" >
+                                                            
+                                Assurer mon logement
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/assurer-son-vehicule.html"  target=""  data-tracking-link-title="Assurer mon auto" >
+                                                            
+                                Assurer mon auto
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/assurer-sa-sante.html"  target=""  data-tracking-link-title="Choisir l’offre de santé qui me correspond" >
+                                                            
+                                Choisir l’offre de santé qui me correspond
+                                    </a></li></ul>
+                                </div>
+                                                                                                <div class="col-sm-6">
+                                    <ul class="ezobjectrelationlist-field"><li><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/se-proteger-soi.html"  target=""  data-tracking-link-title="Protéger mon avenir et celui de mes proches" >
+                                                            
+                                Protéger mon avenir et celui de mes proches
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/assurer-son-quotidien.html"  target=""  data-tracking-link-title="Me protéger des risques du quotidien" >
+                                                            
+                                Me protéger des risques du quotidien
+                                    </a></li></ul>
+                                </div>
+                                                            </div>
+                        </div>
+                                                <div class="col-sm-4">
+                            <div class="slide pushes"><div><a href="../../bretagne-pays-de-loire/particuliers/simulateurs.html"  target=""  data-tracking-link-title="Lien découvrez nos simulateurs - bpl" data-position="1"  data-pub="INT-102" data-format="assurance---credits-simulateurs-et-devis"><img src="https://www.caisse-epargne.fr:443/var/storage/images/media/media-bretagne-pays-de-loire/particuliers/home/vignettes-mineures/emprunter/assurance-credits-simulateurs-et-devis-en-ligne/5772659-4-fre-BL/assurance-credits-simulateurs-et-devis-en-ligne_push_marketing.jpg?2.3.48" 
+                                                               alt="Simulez"
+                     title="Simulez"
+                     class="ezimage-field" /></a></div></div>
+                        </div>
+                                            </div>
+                    <div class="row">
+                                                <div class="col-sm-12">
+                            <a href="../../bretagne-pays-de-loire/particuliers/s-assurer.html" class="offers-link" target=""  data-tracking-link-title="Tout ce dont vous avez besoin pour vous assurer" >
+                                                            
+                                Tout ce dont vous avez besoin pour vous assurer
+                                    </a><a href="../../bretagne-pays-de-loire/particuliers/s-assurer/nos-produits-pour-s-assurer.html" class="offers-link" target=""  data-tracking-link-title="Voir tous les produits de la Caisse d&#039;Epargne pour vous assurer" >
+                                                            
+                                Voir tous les produits de la Caisse d'Epargne pour vous assurer
+                                    </a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </li>
+
+                            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    $('nav.row li[prefix]').each(function() {
+        if ($(this).attr('prefix') == location.pathname.substring(0, $(this).attr('prefix').length)) {
+           $(this).children('a').addClass('active');
+            return false;
+        }
+    });
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('a[href*="(~"]').each(function() {
+            that = $(this);
+            if (matches = $(that).attr('href').match(/\(~\w+\)/gi)) {
+                $.each(matches, function(key, value) {
+                    var newvalue = value.substr(2, value.length - 3);
+                    if (typeof $.context.get(newvalue) !== 'undefined') {
+                        var decodeNewValue = decodeURIComponent($.context.get(newvalue));
+                        $(that).attr('href', $(that).attr('href').replace(value, decodeNewValue));
+                    }
+                });
+            }
+        });
+
+        $(document).ready(function() {
+                    });
+
+        // Gestion de l'affichage du lien d'accès rapide "contact" pour les clients hors-portefeuille en tablette/mobile
+            </script>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ariane">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <ul class="pullup">
+                                <li><a href="#header" data-scrollto=""><span class="button-text">Remonter</span><span class="button-arrow icon icon-bpce-arrow-top"></span></a></li>
+                            </ul>
+                        </div>
+                        <ul class="main" itemprop="breadcrumb" style="font-size: 13px; color: #666666;">
+                                    <li class="home active">
+                    <a href="../../bretagne-pays-de-loire/particuliers.html">
+                                                            <span class="ico icon-bpce-home"><span class="hidden-lg hidden-md hidden-sm hidden-xs">Particuliers</span></span>
+                                                </a>
+            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <form name="Main" method="post" action="sante_simulation_connexion.aspx.html" id="Main">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNjM1NTU5NDEPZBYCAgwPZBYCAgMPZBYEAgEPFgIeB1Zpc2libGVoFgJmD2QWAgIBD2QWAmYPDxYCHgRUZXh0BQRUcnVlZGQCAw9kFgJmD2QWAmYPZBYCAgMPZBYCZg9kFgJmDw8WAh4ISW1hZ2VVcmwFOi9jYWNoZS8wODExMjAxM19vYnRlbmlyX3ZvdHJlX3RhcmlmX2J0bl8yMDEzMTExMjE1NTU1OS5wbmcWBB4FdGl0bGUFE0FVVEhFTlRJRklFWiAtIFZPVVMeE2RhdGEtcGF1dGgtcmVkaXJlY3QFMCh+ZGVpYmFzZXVybCkvUG9ydGFpbC5hc3B4P3RhY2hlPU5PU0FXRUImb3JndXJsPWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFVWN0bDAyJENDX3NhbnRlX3NpbXVsYXRpb25fY29ubmV4aW9uJGN0bDAwJENDX2luZHVzX3ZhZF9hdXRoZW50aWZfbm9zYXdlYiRJbWFnZWJ1dHRvbjGf6KW9yBF4srbfioxNiBIk0gMztQ==" />
+
+
+<script src="https://www.caisse-epargne.fr/ScriptResource.axd?d=UxHGMDCk4onO773EdHr0iPOYW76K8HmKoWLKTV2sweuMgvYzMu193t8H4p2h1U5pY7ksUkOWwn5D1EpYjHgisrLgw3Jbw3xGx2IHJNViLn6juFMwrOe9WZrYnepF091dMZ2SjaK1lw14_eBUEcHm_1wSBH41&amp;t=636274385781394562" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ABDEED5C" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKjp5bMBQKo8a/4CqAhnV8lDMR7LGP9756hwbYpQ/9c" />
+    <!--  -->
+    <div id="global">
+        <div class="general-content">
+            <a name="GoToContenu"></a>
+            <div id="contenu">
+                <section id="principal">
+                            <div style="width:100%">
+                                
+                            </div>
+                            <div id="divAnciennePageTotem" style="width:724px; margin-left:auto; margin-right:auto; ">
+                                
+<script type="text/javascript">
+$(document).ready(function() {
+    if (datalayer) {
+        datalayer.page.pageType = "formulaire";
+        datalayer.page.pageName = "sim sante";
+        datalayer.page.espace = "commercial";
+        datalayer.page.univers = "s assurer";
+        datalayer.produit.gamme = "assurance";
+        datalayer.produit.code = "sante";
+    }
+    /* tag de page load */
+    PageLoadNgi();
+});
+</script>
+<div class="tContainer737">
+<div class="tPushblock732 tDevisSimulationSanteV2">
+<h3>Ma sant&eacute; : obtenez imm&eacute;diatement un tarif</h3>
+<p>Prot&eacute;gez vous et vos proches en quelques clics, gr&acirc;ce &agrave; la compl&eacute;mentaire sant&eacute; adapt&eacute;e &agrave; vos besoins et vos exigences.</p>
+</div>
+<div class="tDevisSimulationSanteV2Content">
+<div class="tMultiSection tStrapLine">
+<div class="tDevisSimulationSanteV2Content">
+<h4>Vous disposez d'un acc&egrave;s &agrave; la banque &agrave; distance</h4>
+<img src="https://www.caisse-epargne.fr/cache/08112013_devis_simulation_santee_medical_20131112155504.jpg" id="ctl02_CC_sante_simulation_connexion_src_615731728" class="tMedical" />
+<div class="tRight">
+<ul>
+    <li><strong>Simple</strong> : compl&eacute;tez le formulaire en ligne en quelques clics</li>
+    <li><strong>Rapide</strong> : cinq minutes suffisent pour obtenir votre tarif</li>
+    <li><strong>Pratique</strong> : obtenez un tarif sans vous d&eacute;placer</li>
+</ul>
+<input type="image" name="ctl02$CC_sante_simulation_connexion$ctl00$CC_indus_vad_authentif_nosaweb$Imagebutton1" id="ctl02_CC_sante_simulation_connexion_ctl00_CC_indus_vad_authentif_nosaweb_Imagebutton1" data-pauth-required="" data-toggle="modal" data-target="#pauth" title="AUTHENTIFIEZ - VOUS" data-pauth-redirect="(~deibaseurl)/Portail.aspx?tache=NOSAWEB&amp;orgurl=" src="https://www.caisse-epargne.fr/cache/08112013_obtenir_votre_tarif_btn_20131112155559.png" alt="AUTHENTIFIEZ-VOUS" border="0" />
+</div>
+<div class="tClearFloats">.</div>
+<h4>Vous ne disposez pas d'un acc&egrave;s &agrave; la banque &agrave; distance</h4>
+<span class="tDevisSimulationSanteV2ContentThumb"><span class="tDevisSimulationSanteV2ContentTitle">Contactez un conseiller en composant<br />
+le <span>32 41 *</span></span> <span class="tDevisSimulationSanteV2ContentText">*Service gratuit + prix d&rsquo;appel.</span> </span></div>
+<div class="tClearFloats">.</div>
+</div>
+</div>
+</div>
+                            </div>
+                        </section>
+            </div>
+        </div>
+        <div id="bottom" class="zero clear">
+        </div>
+        <div id="divFooter" style="position: relative; display: block;">
+            <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dropdown"><a href="#" data-toggle="dropdown" class="title">Gestion privée</a><ul class="dropdown-menu"><li><a href="../../gestion-privee-a-votre-service.html"  target="_blank"  data-tracking-link-title="Découvrir la gestion privée" >
+                                                            
+                                Découvrir la gestion privée
+                                    </a></li><li><a href="https://www.gestionprivee.caisse-epargne.fr/inscription-newsletter/"  target="_blank"  data-tracking-link-title="S’inscrire à l’information gestion privée Caisse d’Epargne" >
+                                                            
+                                S’inscrire à l’information gestion privée Caisse d’Epargne
+                                    </a></li></ul></div>
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown"><a href="#" data-toggle="dropdown" class="title">Financement</a><ul class="dropdown-menu"><li><a href="../../bretagne-pays-de-loire/entreprises/financement/neo-business.html"  target=""  data-tracking-link-title="Accompagner les entreprises qui innovent" >
+                                                            
+                                Accompagner les entreprises qui innovent
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/professionnels/femmes-entrepreneures/femmes-entrepreneures-gamme.html"  target=""  data-tracking-link-title="Soutenir l’entrepreneuriat féminin" >
+                                                            
+                                Soutenir l’entrepreneuriat féminin
+                                    </a></li></ul></div><div class="dropdown"><a href="#" data-toggle="dropdown" class="title">Guides pratiques</a><ul class="dropdown-menu"><li><a href="http://blog.horizonentrepreneurs.fr/guides_et_conseils/pour-entreprendre/"  target="_blank"  data-tracking-link-title="Guide pour créer  son entreprise" >
+                                                            
+                                Guide pour créer  son entreprise
+                                    </a></li><li></li><li><a href="http://blog.horizonentrepreneurs.fr/guides_et_conseils/pour-financer/"  target="_blank"  data-tracking-link-title="Guide pour financer son entreprise" >
+                                                            
+                                Guide pour financer son entreprise
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/professionnels/placement/fiscalite-professions-liberales-2021.html"  target=""  data-tracking-link-title="Guide fiscalité des professions libérales" >
+                                                            
+                                Guide fiscalité des professions libérales
+                                    </a></li></ul></div>
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown"><a href="#" data-toggle="dropdown" class="title">Aide et outils pratiques</a><ul class="dropdown-menu"><li><a href="../../bretagne-pays-de-loire/services-numeros-utiles.html"  target=""  data-tracking-link-title="Services et numéros utiles" >
+                                                            
+                                Services et numéros utiles
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/au-quotidien/conseil-perte-vol-moyens-de-paiement.html"  target=""  data-tracking-link-title="Assistance perte et vol / Opposition" >
+                                                            
+                                Assistance perte et vol / Opposition
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/mentions-legales.html"  target=""  data-tracking-link-title="Mentions légales" >
+                                                            
+                                Mentions légales
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/faq-caisse-epargne.html"  target=""  data-tracking-link-title="FAQ" >
+                                                            
+                                FAQ
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/dossier-conseils-securite.html"  target=""  data-tracking-link-title="Sécurité" >
+                                                            
+                                Sécurité
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/particuliers/faq-particuliers/accessibilite.html"  target=""  data-tracking-link-title="Accessibilité" >
+                                                            
+                                Accessibilité
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/services-mobiles.html"  target="_self"  data-tracking-link-title="Services mobiles" >
+                                                            
+                                Services mobiles
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/tarifs-informations-reglementaires.html"  target=""  data-tracking-link-title="Tarifs et informations réglementaires" >
+                                                            
+                                Tarifs et informations réglementaires
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/dda.html"  target=""  data-tracking-link-title="Directive de Distribution d’Assurances" >
+                                                            
+                                Directive de Distribution d’Assurances
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/documents-informations-cles-investisseur.html"  target=""  data-tracking-link-title="Documents d&#039;informations clés pour l&#039;investisseur (DIC/DICI)" >
+                                                            
+                                Documents d'informations clés pour l'investisseur (DIC/DICI)
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/protection-donnees-personnelles.html"  target=""  data-tracking-link-title="Protection des données personnelles" >
+                                                            
+                                Protection des données personnelles
+                                    </a></li><li><a href="https://www.agences.caisse-epargne.fr/banque-assurance/bretagne-pays-de-loire/agences/"  target=""  data-tracking-link-title="Agences" >
+                                                            
+                                Agences
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/service-ce-net/ce-net-remises.html"  target=""  data-tracking-link-title="CE net Remises " >
+                                                            
+                                CE net Remises 
+                                    </a></li><li><a href="https://youtu.be/7KC2K20kAdI"  target="_blank"  data-tracking-link-title="Signature d’un contrat de prêt professionnel" >
+                                                            
+                                Signature d’un contrat de prêt professionnel
+                                    </a></li></ul></div>
+            </div>
+            <div class="col-md-3">
+                                <div class="dropdown"><a href="#" data-toggle="dropdown" class="title">La Caisse d’Epargne et vous</a><ul class="dropdown-menu"><li><a href="https://caissedepargnebretagnepaysdeloire.fr/"  target=""  data-tracking-link-title="Nous connaitre" >
+                                                            
+                                Nous connaitre
+                                    </a></li><li><a href="http://www.fnce.fr"  target="_blank"  data-tracking-link-title="Fédération Nationale (FNCE)" >
+                                                            
+                                Fédération Nationale (FNCE)
+                                    </a></li><li><a href="http://www.gestionprivee.caisse-epargne.fr/"  target="_blank"  data-tracking-link-title="Gestion Privée" >
+                                                            
+                                Gestion Privée
+                                    </a></li><li><a href="https://caissedepargnebretagnepaysdeloire.fr/partenariats-sportifs/"  target=""  data-tracking-link-title="Sponsoring - Mécénat Sport" >
+                                                            
+                                Sponsoring - Mécénat Sport
+                                    </a></li><li><a href="https://caissedepargnebretagnepaysdeloire.fr/mon-job-ici/"  target="_blank"  data-tracking-link-title="Recrutement" >
+                                                            
+                                Recrutement
+                                    </a></li><li><a href="https://www.societaires.caisse-epargne.fr/bretagne-paysdela-loire"  target="_blank"  data-tracking-link-title="Site Sociétaires" >
+                                                            
+                                Site Sociétaires
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/espace-international.html"  target=""  data-tracking-link-title="Who are we?" >
+                                                            
+                                Who are we?
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/professionnels/inscription-abonnement-newsletters-professionnels.html"  target="_blank"  data-tracking-link-title="Newsletter d’actualités professionnelles" >
+                                                            
+                                Newsletter d’actualités professionnelles
+                                    </a></li><li><a href="../../bretagne-pays-de-loire/professionnels/inscription-abonnement-newsletters-professionnels.html"  target="_blank"  data-tracking-link-title="Newsletter Femmes entrepreneures" >
+                                                            
+                                Newsletter Femmes entrepreneures
+                                    </a></li><li><a href="https://twitter.com/Entrepreneurs"  target="_blank"  data-tracking-link-title="Compte twitter @Entrepreneurs" >
+                                                            
+                                Compte twitter @Entrepreneurs
+                                    </a></li><li class="visible-md visible-lg"><a href="../../bretagne-pays-de-loire/aide/choisir-sa-caisse.html" target="" id="full_switch_caisse" class="regional-fund">Changer de Caisse</a></li><li class="socials"><ul><li><a href="https://www.facebook.com/EspritOuest/" title="Caisse d&#039;Epargne - Facebook" class="social facebook ezurl-field" target="_blank" data-tracking-social-name="facebook"></a></li><li><a href="https://twitter.com/CaissEpargneBPL" title="Caisse d&#039;Epargne - Twitter" class="social twitter ezurl-field" target="_blank" data-tracking-social-name="twitter"></a></li><li><a href="https://fr.linkedin.com/company/caisse-d%27epargne-bretagne-pays-de-loire" title="Caisse d&#039;Epargne - Linkedin" class="social linkedin ezurl-field" target="_blank" data-tracking-social-name="linkedin"></a></li><li><a href="https://www.youtube.com/user/EspritOuest" title="Caisse d&#039;Epargne - YouTube" class="social youtube ezurl-field" target="_blank" data-tracking-social-name="youtube"></a></li></ul></li></ul></div>
+
+                <div class="dropdown"><div class="ezxmltext-field"><p><a href="https://www.communaute.caisse-epargne.fr/" target="_blank"> </a></p></div></div>
+            </div>
+        </div>
+        <div class="row visible-xs visible-sm regional-fund">
+            <div class="col-xs-12">
+                <a href="../../bretagne-pays-de-loire/aide/choisir-sa-caisse.html" id="mobile_switch_caisse">Changer de Caisse</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+            
+        </div>
+        <script type='text/javascript'>xt_ac = ''; xt_at = '';  if (window.xtparam!=null){window.xtparam+='&ac=&at=';} else {window.xtparam ='&ac=&at=';};</script><script type='text/javascript'> xt_multc ='&x1=0&x2=0';  if (window.xtparam!=null){{window.xtparam+=xt_multc;}} else{{window.xtparam =xt_multc;}};</script> <script type='text/javascript'> xtnv = document;  /*parent.document or top.document or document*/  xtsd = 'https://logs2';  xtpage = 'sante_simulation_connexion';  xtsite='354347';  xtn2='50';  </script><script type='text/javascript' src='../../Components/Javascripts/Xiti/xtcore_V2.js'></script><noscript><img width='1' height='1' alt='' src='https://logs2.xiti.com/hit.xiti?s=354347&amp;s2=50&amp;p=sante_simulation_connexion&amp;di=' ></noscript>  
+    </div>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    <!--[if lte IE 9 ]> </div> <![endif]-->
+    <!-- modales cnil -->
+<div class="browsers modal fade in" aria-hidden="false" aria-labelledby="pauth" role="dialog" tabindex="-1" id="browsers" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-container">
+                <span class="close" aria-hidden="true" data-dismiss="modal">
+                        <span>Fermer</span>
+                </span>
+            </div>
+            <div class="modal-header">
+                <p class="modal-title">Notre site est optimisé pour une version plus récente de votre navigateur actuel</p>
+                <p class="modal-subtitle alert-connect"></p>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <b>Pour profiter de toutes les innovations que nous vous proposons, nous vous recommandons de mettre à jour votre navigateur Internet.</b>
+                    <br><br>
+                    Cette mise à jour ne vous prendra que quelques minutes et vous apportera un confort durable.
+                    Téléchargez la dernière version de votre navigateur préféré :
+                </p>
+                <div class="navi firefox" title="Télécharger Firefox">
+                    <div>Firefox</div>
+                    <a href="https://www.mozilla.org/fr/firefox/new/" target="_blank" class="link">
+                        <span class="img"></span>Télécharger
+                    </a>
+                </div>
+                <div class="navi chrome" title="Télécharger Google Chrome">
+                    <div>Chrome</div>
+                    <a href="http://www.google.com/intl/fr_fr/chrome/browser/" target="_blank" class="link">
+                        <span class="img"></span>Télécharger
+                    </a>
+                </div>
+                <div class="navi safari" title="Télécharger Safari">
+                    <div>Safari</div>
+                    <a href="https://www.apple.com/safari/" target="_blank" class="link">
+                        <span class="img"></span>Télécharger
+                    </a>
+                </div>
+                <div class="navi ie" title="Télécharger Internet Explorer">
+                    <div>Internet Explorer</div>
+                    <a href="http://windows.microsoft.com/fr-fr/internet-explorer/download-ie" target="_blank" class="link">
+                        <span class="img"></span>Télécharger
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn grey" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade in browsers large" aria-hidden="false" aria-labelledby="pauth" role="dialog" tabindex="-1" id="browsers-device" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-container close_browsers_modal">
+                <span class="close" aria-hidden="true">
+                    <span>Fermer</span>
+                </span>
+            </div>
+            <div class="logo_ce"></div>
+            <div class="modal-header">
+                <p class="modal-title">Notre site est optimisé pour une version  plus récente de votre Navigateur actuel</p>
+                <p class="modal-subtitle alert-connect"></p>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    Votre configuration ne vous permet pas de profiter pleinement des innovations de notre nouveau site.
+                    <br>Vous pouvez néanmoins consulter vos comptes sur notre site mobile&nbsp;:
+                </p>
+                <a  class="btn grey" href="https://www.m.caisse-epargne.fr">Accéder à la version mobile</a>
+                <br><br>
+                <a class="link close_browsers_modal" href="#">Ou continuez avec votre navigateur actuel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade in browsers large" aria-hidden="false" aria-labelledby="pauth" role="dialog" tabindex="-1" id="browsers-device-bloquant" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="logo_ce"></div>
+            <div class="modal-header">
+                <p class="modal-title">Notre site est optimisé pour une version plus récente de votre navigateur actuel</p>
+                <p class="modal-subtitle alert-connect"></p>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    Votre configuration ne vous permet pas de profiter pleinement des innovations de notre nouveau site.
+                    <br>Vous pouvez néanmoins consulter vos comptes sur notre site mobile&nbsp;:
+                </p>
+                <a  class="btn grey" href="https://www.m.caisse-epargne.fr">Accéder à la version mobile</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

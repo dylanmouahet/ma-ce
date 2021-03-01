@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>ce-small</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ce-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ce" fill-rule="nonzero">
+            <polygon id="Fill-1" fill="#EB0F2D" points="0 0 0.0108754758 599.989124 599.989125 600 600 0.010875673"></polygon>
+            <polygon id="Fill-2" fill="#FFFFFF" points="333.792108 395 474 395.021253 456.14272 422.978747 316 423"></polygon>
+            <polygon id="Fill-3" fill="#FFFFFF" points="231.693966 516.095708 479 516 461.295259 543.957462 214 544"></polygon>
+            <polygon id="Fill-4" fill="#FFFFFF" points="403.479988 253.656032 421.851512 242 465 311.946996 406.452795 349 395 330.505907 435.336083 305.011711"></polygon>
+            <polygon id="Fill-5" fill="#FFFFFF" points="45.8516537 307.010638 237 307 219.224311 335 28 335"></polygon>
+            <path d="M386.483258,307 C396.729412,306.9553 404.966515,298.685898 405,288.516768 C404.966515,278.269414 396.651282,270 386.494419,270 C376.304073,269.988836 368.022323,278.291764 368,288.472069 C368.022323,298.719423 376.315234,306.988825 386.483258,307" id="Fill-6" fill="#FFFFFF"></path>
+            <polygon id="Fill-8" fill="#FFFFFF" points="247.167273 284 56 283.968011 73.8435812 256.010663 265 256"></polygon>
+            <polygon id="Fill-10" fill="#FFFFFF" points="106.88421 205 298 205 280.191754 233 89 232.946748"></polygon>
+            <path d="M511,19 C344.232148,102.034986 101.978302,197.964076 102,393.711126 C102,466.567699 143.843847,519.860432 185.926366,540 L401.231777,194.922501 L384.492069,168.232684 L178.310504,498.525958 C157.133634,482.883575 129.968223,441.974397 129.935677,387.356407 C129.98992,236.505171 320.560053,136.947917 485.038806,60.9302782 L511,19 Z" id="Fill-12" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

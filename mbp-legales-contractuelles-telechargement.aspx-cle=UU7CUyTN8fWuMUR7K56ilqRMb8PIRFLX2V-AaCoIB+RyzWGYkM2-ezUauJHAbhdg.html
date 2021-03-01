@@ -1,0 +1,366 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+	Caisse d'Epargne
+</title><link rel="shortcut icon" type="image/x-icon" href="bundles/inddefault/images/favicon.png" /><esi:include src="/headlink" /><script type="text/javascript" src="cache/aefe7b3b3c01434d871f950641ec477bfb6e4600/satelliteLib-a8a98174e13cce0ba75637f9bf7496e02422bab8.js"></script>
+
+    <script type="text/javascript">
+        $.tracking = {
+            _loggedEvents: {},
+            event: function(name, params) { },
+            _logEvent: function(name) { },
+            hasEventFired: function(name) { },
+            getFiredEventCount: function(name) { },
+            set: function(name, value) { }
+        };
+        function ClickNgi(type, libelle) {
+            if (datalayer) {
+                datalayer.clic.libelle = libelle;
+                datalayer.clic.type = type;
+                console.log('ClickNgi');
+                console.log(JSON.stringify(datalayer));
+                _satellite.track('ClickToTrackNgi');
+            }
+            else {
+                console.log('pas de datalayer');
+            }
+        }
+
+        function ClickNgiSim() {
+            console.log('ClickNgiSim');
+            _satellite.track('OpenSimNgi');
+        }
+
+        function ClickNgiRdv() {
+            console.log('ClickNgiRdv');
+            _satellite.track('ClickNgiRdv');
+        }
+
+        function ClickNgiCallBack() {
+            console.log('ClickNgiCallBack');
+            if (datalayer) {
+                datalayer.clic.libelle = '';
+                datalayer.clic.type = '';
+            }
+            _satellite.track('ClickNgiCallBack');
+        }
+
+        function ClickToTrackNgi() {
+            console.log('ClickToTrackNgi');
+            _satellite.track('ClickToTrackNgi');
+        }
+
+        function ClickToAbandonNgi() {
+            console.log('ClickToAbandonNgi');
+            _satellite.track('ClickToAbandonNgi');
+        }
+
+        function ClickNgiCGV() {
+            console.log('ClickNgiCGV');
+            _satellite.track('ClickNgiCGV');
+        }
+
+        function StartFormNgi() {
+            console.log('StartFormNgi');
+            _satellite.track('StartFormNgi');
+        }
+
+        function EndFormNgi() {
+            console.log('EndFormNgi');
+            _satellite.track('EndFormNgi');
+        }
+
+        function PageLoadNgi() {
+            console.log('PageLoadNgi');
+            _satellite.track('PageLoadNgi');
+            console.log('fin PageLoadNgi');
+        }
+
+        function ClickToFichesProduits(type) {
+            //tag de click
+            var libelle = 'sim credit ' + type + ' - fiches produits';
+            console.log('FichesProduits : type = ' + type);
+            ClickNgi('navigation', libelle);
+        }
+
+    </script>
+
+<link id="style" href="cache/style2_20121123144355.css" rel="stylesheet" type="text/css" media="screen" /><link id="indcss_all_min" href="cache/indcss_all_min_20151102101222.css" rel="stylesheet" type="text/css" media="screen" /><link id="indcss_fancybox" href="cache/indcss_fancybox_20111202124712.css" rel="stylesheet" type="text/css" media="screen" /><script id="modernizr" src="cache/indjs/lib/modernizr-1.6.js" type="text/javascript"></script><script id="jquery1" src="cache/indjs/lib/jquery-1.4.2.min.js" type="text/javascript"></script><script type="text/javascript" language="javascript">var jsPath ='/cache/indjs/'</script><script id="includes" src="cache/indjs/includes.js" type="text/javascript"></script><script type="text/javascript" language="javascript">var jquery_1_4_2 = $.noConflict(true);</script><script id="jquery2" src="Components/Javascripts/jquery.js" type="text/javascript"></script><script id="indjs_boutonsfancybox" src="cache/indjs_boutonsfancybox_20131001093731.js" type="text/javascript"></script><script id="fonctions" src="cache/fonctions_20111129022402.js" type="text/javascript"></script><script id="wbo_performance" src="cache/wbo_performance_20131030163912.js" type="text/javascript"></script><script id="adPerf" src="cache/adperf_20160518151618.js" type="text/javascript"></script></head>
+<body class="layout-fixed">
+    <!--Control Language="C#"--><!--Register TagPrefix="cc" Namespace="GCE.CMS.FrontOffice.Web.Controls" Assembly="GCE.CMS.FrontOffice.Web"--><script type="text/javascript">
+
+    /* lecture du cookie */
+    function lectureCookie(k) { return (document.cookie.match('(^|; )' + k + '=([^;]*)') || 0)[2] }
+
+    /* */
+    function parseUrlParameters(query) {
+        var getQueryStringNameValuePairs = new Array();
+        var queryString = unescape(query);
+        var nameValuePairs = queryString.split(/&/);
+
+        for (var i in nameValuePairs) {
+            var nameValue = nameValuePairs[i].split(/=/);
+            getQueryStringNameValuePairs[nameValue[0]] = nameValue[1];
+        }
+
+        return getQueryStringNameValuePairs;
+    }
+
+    var datalayer = {
+        clic: {
+            libelle: "",
+            type: ""
+        },
+        client: {
+            idEnttGrpe: "",
+            id: "",
+            statut: "prospect",
+            marche: ""
+        },
+        page: {
+            applicationType: "Site",
+            applicationName: "ngi",
+            codeEnttGrpe: "NAT",
+            marche: "Particuliers",
+            univers: "",
+            pageType: "",
+            pageName: "",
+            espace: "",
+            abTesting: "",
+            abTestingId: "",
+            iframe: "0"
+        },
+        produit: {
+            gamme: "",
+            code: "",
+            formChosen: "",
+            expectation: ""
+        },
+        form: {
+            nom: "",
+            idEtape: ""
+        },
+        campagne: {
+            id: ""
+        },
+        search: {
+            notFound: "",
+            type: ""
+        },
+        answer: {
+            montantIni: "",
+            duree: "",
+            montantMens: "",
+            aggreg75: ""
+        }
+    };
+
+    var codeAcronymeCaisse = {
+        11315: "CEPAC",
+        11425: "CEN",
+        13135: "CEMP",
+        13485: "CELR",
+        14445: "CEBPL",
+        14505: "CELC",
+        16275: "CEHDF",
+        18025: "CEHDF",
+        18315: "CECAZ",
+        18715: "CEPAL",
+        12135: "CEBFC",
+        13335: "CEAPC",
+        13825: "CERA",
+        14265: "CELDA",
+        15135: "CELCA",
+        16705: "CEA",
+        17515: "CEIDF"
+    };
+
+
+    var libelleAcronymeCaisse = {
+        "cepac": "CEPAC",
+        "normandie": "CEN",
+        "midi-pyrenees": "CEMP",
+        "languedoc-roussillon": "CELR",
+        "bretagne-pays-de-loire": "CEBPL",
+        "loire-centre": "CELC",
+        "hauts-de-france": "CEHDF",
+        "picardie": "CEHDF",
+        "cote-d-azur": "CECAZ",
+        "auvergne-limousin": "CEPAL",
+        "bourgogne-franche-comte": "CEBFC",
+        "aquitaine-poitou-charentes": "CEAPC",
+        "rhone-alpes": "CERA",
+        "loire-drome-ardeche": "CELDA",
+        "lorraine-champagne-ardenne": "CELCA",
+        "alsace": "CEA",
+        "ile-de-france": "CEIDF"
+    };
+
+
+    var listeUnivers = {
+        "au-quotidien": "au quotidien",
+        "emprunter": "emprunter",
+        "epargner": "epargner",
+        "s-assurer": "s assurer"
+    };
+
+
+    jQuery(function() {
+        if (window.location.search.substring(1) != null) {
+            /* console.log('window.location.search.substring(1) ' + window.location.search.substring(1) + '*'); */
+            var queryString = parseUrlParameters(window.location.search.substring(1));
+            if (queryString.cid) {
+                datalayer.campagne.id = queryString.cid;
+            }
+        }
+        else {
+            console.log('window.location.search.substring(1) = null');
+        }
+
+        /* =============================================================================================== */
+        /* recuperation des informations dans l url */
+        /* =============================================================================================== */
+
+        var url = window.location.href;
+        /* console.log('url ' + url + ' *');*/
+
+        /* ======== recuperation de la region dans l url pour alimenter datalayer avec acronyme ======== */
+        var etablissement = "";
+        etablissement = url.split("/")[3]; /* url formatee en region/marche */
+        /* console.log('etablissement ' + etablissement + ' *');*/
+        if (libelleAcronymeCaisse[etablissement] === undefined) {
+            /* on n a pas trouve la region, l url est peut-etre formatee en marche/region */
+            etablissement = url.split("/")[4]; /* url formatee en marche/region */
+            /* console.log('etablissement ' + etablissement + ' *');*/
+            if (libelleAcronymeCaisse[etablissement] === undefined) {
+                /* on n a pas trouve la region, l url n est pas regionalisee */
+                datalayer.page.codeEnttGrpe = "NAT";
+            }
+            else {
+                /* etablissement trouve dans url formatee en marche/region */
+                datalayer.page.codeEnttGrpe = libelleAcronymeCaisse[etablissement];
+            }
+        }
+        else {
+            /* etablissement trouve dans url formatee en region/marche */
+            datalayer.page.codeEnttGrpe = libelleAcronymeCaisse[etablissement];
+        }
+        /* console.log('datalayer.page.codeEnttGrpe ' + datalayer.page.codeEnttGrpe + '*');*/
+
+
+
+        /* ======== recuperation de l univers dans l url pour alimenter datalayer.page.univers s il n est pas fourni au niveau de la page (ex VAD) ======== */
+        if (datalayer.page.univers === undefined) {
+            var univers = "";
+            univers = url.split("/")[4]; /* url non regionalisee */
+            console.log('univers ' + univers + ' *');
+            if (listeUnivers[univers] === undefined) {
+                /* on n a pas trouve l univers, l url est regionalisee */
+                univers = url.split("/")[5]; /* url regionalisee */
+                console.log('univers ' + univers + ' *');
+                if (listeUnivers[univers] === undefined) {
+                    /* on n a pas trouve l univers */
+                    datalayer.page.univers = "";
+                }
+                else {
+                    /* univers trouve  */
+                    datalayer.page.univers = listeUnivers[univers];
+                }
+            }
+            else {
+                /* univers trouve  */
+                datalayer.page.univers = listeUnivers[univers];
+            }
+        }
+        console.log('datalayer.page.univers ' + datalayer.page.univers + '*');
+
+        /* =============================================================================================== */
+
+
+        /* =============================================================================================== */
+        /* recuperation de certaines informations dans le cookie EZCONTEXT(reg=) pour alimenter datalayer  */
+        /* =============================================================================================== */
+        datalayer.client.idEnttGrpe = parseUrlParameters(lectureCookie("EZ_CONTEXTE")).reg;
+        console.log('datalayer.client.idEnttGrpe ' + datalayer.client.idEnttGrpe + '*');
+        datalayer.client.marche = parseUrlParameters(lectureCookie("EZ_CONTEXTE")).mar;
+        console.log('datalayer.client.marche ' + datalayer.client.marche + '*');
+        datalayer.client.statut = $.context.isConnected() ? "authentifie" : "prospect";
+        console.log('datalayer.client.statut ' + datalayer.client.statut + '*');
+        /* =============================================================================================== */
+        if ($.context.has('nodape')) {
+        datalayer.client.id = $.context.get('nodape');
+        datalayer.client.idEnttGrpe = $.context.has('creg') ? $.context.get('creg') : '';
+        datalayer.client.marche = $.context.has('mar') ? $.context.get('mar') : '';
+        datalayer.client.statut = $.context.isConnected() ? "authentifie" : "identifie";
+        }
+    });
+
+</script>
+    <esi:include src="/esilink" />
+    <!--[if lte IE 6 ]> <div class="ie6 ielt7 ielt8 ielt9"> <![endif]-->
+    <!--[if IE 7 ]> <div class="ie7 ielt8 ielt9"> <![endif]-->
+    <!--[if IE 8 ]> <div class="ie8 ielt9"> <![endif]-->
+    <!--[if IE 9 ]> <div class="ie9"> <![endif]-->
+    <esi:include src="/cepac/esiheader" />
+    <div class="ariane">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <ul class="pullup">
+                                <li><a href="#header" data-scrollto=""><span class="button-text">Remonter</span><span class="button-arrow icon icon-bpce-arrow-top"></span></a></li>
+                            </ul>
+                        </div>
+                        <ul class="main" itemprop="breadcrumb" style="font-size: 13px; color: #666666;">
+                            <esi:include src="/cepac/esibreadcrumb/mbp-legales-contractuelles-telechargement.aspx" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form name="Main" method="post" action="mbp-legales-contractuelles-telechargement.aspx-cle=UU7CUyTN8fWuMUR7K56ilqRMb8PIRFLX2V-AaCoIB+RyzWGYkM2-ezUauJHAbhdg.html" id="Main">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNjM1NTU5NDEPZBYCAgwPZBYCAgMPZBYCAgEPFgIeB1Zpc2libGVoFgJmD2QWAgIBD2QWAmYPDxYCHgRUZXh0BQRUcnVlZGRk6oMpGcmlfN5FWzx3Wre2fSNYQ10=" />
+
+
+<script src="https://www.caisse-epargne.fr/ScriptResource.axd?d=UxHGMDCk4onO773EdHr0iPOYW76K8HmKoWLKTV2sweuMgvYzMu193t8H4p2h1U5pY7ksUkOWwn5D1EpYjHgisrLgw3Jbw3xGx2IHJNViLn6juFMwrOe9WZrYnepF091dMZ2SjaK1lw14_eBUEcHm_1wSBH41&amp;t=636274378055037600" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CD090C32" />
+    <!--      -->
+    <div id="global">
+        <div class="general-content">
+            <a name="GoToContenu"></a>
+            <div id="contenu">
+                <section id="principal">
+                            <div>
+                                
+                            </div>
+                            
+                        </section>
+            </div>
+        </div>
+        <div id="divFooter" style="position: relative; display: block;">
+            <esi:include src="/cepac/esifooter" />
+            
+        </div>
+        <script type='text/javascript'>xt_ac = ''; xt_at = '';  if (window.xtparam!=null){window.xtparam+='&ac=&at=';} else {window.xtparam ='&ac=&at=';};</script><script type='text/javascript'> xt_multc ='&x1=0&x2=0';  if (window.xtparam!=null){{window.xtparam+=xt_multc;}} else{{window.xtparam =xt_multc;}};</script> <script type='text/javascript'> xtnv = document;  /*parent.document or top.document or document*/  xtsd = 'https://logs2';  xtpage = 'mbp-legales-contractuelles-telechargement';  xtsite='354352';  xtn2='1';  </script><script type='text/javascript' src='Components/Javascripts/Xiti/xtcore_V2.js'></script><noscript><img width='1' height='1' alt='' src='https://logs2.xiti.com/hit.xiti?s=354352&amp;s2=1&amp;p=mbp-legales-contractuelles-telechargement&amp;di=' ></noscript>  
+    </div>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    <!--[if lte IE 9 ]> </div> <![endif]-->
+    <esi:include src="/esibandeaucnil" />
+</body>
+</html>
